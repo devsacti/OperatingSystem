@@ -2,10 +2,10 @@
 linux with centos, ubuntu, AWS linux etc
 
 ## linux
-(간단) HW 제어 SW
+(간단) SW that controls HW
 
-깊이 파고들면 HW driver, network, 통신 모두 걸쳐있다. 상황에 맞는 개념정리와 실습이 요구된다.
+it is related with HW driver, network and everything 
 
-[Linux shell Project]()
+[Linux Shell Project]()
 
 [config the centOS7 for delivering webapp]()
