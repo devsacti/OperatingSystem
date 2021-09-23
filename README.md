@@ -8,4 +8,4 @@ linux with centos, ubuntu, AWS linux etc
 
 [making shell of Linux]()
 
-[config the centos for delivering webapp]()
+[config the centOS7 for delivering webapp]()
