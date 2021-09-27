@@ -6,8 +6,8 @@ linux with centos, ubuntu, AWS linux etc
 
 it is related with HW driver, network and everything 
 
-[Linux Shell Project]()
+[Linux Shell Project](https://github.com/devsacti/LinuxShellprj)
 
-[Experiencing Linux]()
+[Experiencing basic Linux](https://github.com/devsacti/HandlingLinux)
 
 ## AWS Linux
