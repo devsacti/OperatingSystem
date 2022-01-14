@@ -7,10 +7,9 @@ for examples, centos, ubuntu, AWS linux etc
 
 ## linux
 
-[Beginning Linux]()
-
-[Linux Shell Project](https://github.com/devsacti/LinuxShellprj)
-
 [Experiencing basic Linux](https://github.com/devsacti/HandlingLinux)
+
+### the related
+[Linux Shell Project](https://github.com/devsacti/LinuxShellprj)
 
 ## AWS Linux
