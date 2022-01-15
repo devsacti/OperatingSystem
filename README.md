@@ -32,7 +32,7 @@ to be supplemented later
 ### Running Cloud Server
 (To ME) renting and managing AWS Linux 2_default development environment
 
-[tmp repository, summary not yet](https://github.com/devsacti/Cloud-Utilizations)
+[Cloud-Utilizations](https://github.com/devsacti/Cloud-Utilizations)
 
 ## HW
 to be continued...
