@@ -1,0 +1,47 @@
+apache Tomcat 설치
+    cd /data01
+    wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.71/bin/apache-tomcat-8.5.71.tar.gz
+	https://hye0-log.tistory.com/33
+	=>curl -O http://archive.apache.org/dist/tomcat/tomcat-9/v9.0.38/bin/apache-tomcat-9.0.38.tar.gz
+
+
+		tar xvzpf apache-tomcat-9.0.38.tar.gz
+
+    ln -s apache-tomcat-9.0.38/ tomcat9
+    환경변수 설정
+    cd
+    vi .bash_profile 후 아래와 같이 추가
+
+ 
+
+    JAVA_HOME=/data01/jdk1.8.0_301
+    JRE_HOME=$JAVA_HOME/jre
+
+    CATALINA_HOME=/data01/tomcat9
+    CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$CATALINA_HOME/lib/jsp-api.jar:$CATALINA_HOME/lib/servlet-api.jar
+    
+    PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$CATALINA_HOME/bin
+
+    export JAVA_HOME
+    export JRE_HOME
+
+export CATALINA_HOME
+export CLASSPATH
+
+    export PATH
+    
+    이후 환경변수 refreshing (source ./.bash_profile)
+    echo $CATALINA_HOME으로 설정 확인
+
+ 
+
+    /data01/tomcat9/bin/startup.sh 로 톰켓실행
+    윈도우 상에서 자신의 ip(cmd-ipconfig에서 보이는 virtual ip):8080으로 접속해 호랑이 나오는지 확인 나오면 톰켓 설치 완료
+
+
+    안될 경우 방화벽 문제일 가능성 있음
+    firewall-cmd --permanent --zone=public --add-port=8080/tcp
+    firewall-cmd --reload
+    (방화벽 list 확인)
+    firewall-cmd --permanet --list-all
+    (apache httpd는 80번 포트, tomcat은 8080 포트가 default 임)

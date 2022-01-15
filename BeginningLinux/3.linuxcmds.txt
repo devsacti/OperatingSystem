@@ -1,0 +1,119 @@
+# linux commands
+(simple)
+cmds like 'mkdir' is a function of C program like 'void main(){...}, void dfs(){..}, etc'
+
+remember that linux is son of Unix, and Unix was made by C
+
+linux is simply the C program which is implemented by 'while'
+
+commands are the function of C program that touches the variables and logic of Linux
+
+using linux cmds means that basically you're coding part of OS by C
+
+# linux cmd and basic situation
+
+situation1. assign the right of sudo to user
+
+situation2. installing the java jdk
+
+situation3. enrolling the custom cmds
+
+## situation1
+$ vi /etc/sudoers
+
+...
+(simmilar part)
+devsacti ALL=(ALL:ALL) ALL
+...
+:wq!
+
+### vi function
+not on the 'insert' mode,
+#### search the string at the vi editor
+/(searchTarget)
+
+#### numbering the line and goto that line number
+:set nu 
+:(number)
+
+## situation2
+method1 : from Window to guest via sftp of powershell
+(오라클에서 jdk를 윈도우에 받은 뒤, jdk1.8 파일을 가지고 있고, sftp로 게스트에 전송하는 방식)
+
+method2 : using yum openjdk1.8 - refer1
+
+### acess the guest by sftp of Window !! Don't do it at linux !!
+PS C:\Users\user>$ sftp root@192.168.56.1
+(and input the required password)
+
+### check and config the lpwd, pwd ALWAYS due to auto init
+sftp> lpwd
+Local working directory: /home/devsacti
+sftp> pwd
+Remote working directory: /home/devsacti
+
+$ lcd D:/devsacti/sftp_local
+$ cd /data01
+
+### transfer the target
+(디렉토리 째 보낼때는 -r 필수, 목표지점에 dir를 미리 생성해야한다. 디렉 하위만 가기에)
+sftp> put -r jdk1.8.0_301 /home/devsacti/jdk1.8.0_301
+or
+(1개 파일 보낼때는 recursive 옵션 생략가능)
+sftp> put jdk-8u301-linux-x64.tar.gz
+
+### config the .bash_profile
+$ cd ~
+(you are at /home/devsacti)
+
+$ vi .bash_profile
+
+(as-is)
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+(target line)
+
+export PATH
+(as-is END)
+
+(NEW insertion to target line)
+JAVA_HOME=/data01/jdk1.8.0_301
+JRE_HOME=$JAVA_HOME/jre
+
+PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+export JAVA_HOME
+export JRE_HOME
+(NEW END)
+
+## reload the .bash_profile
+source ~/.bash_profile
+
+## situation3
+
+method 1 enroll alias one by one
+alias hyu_port="netstat -tulpn | grep LISTEN"
+unalias hyu_port
+!! 기존 명령어와 안겹치게 희귀고유명사를 사용하도록 하자
+
+method 2 using /root/.bashrc
+### find .bashrc
+$ find / -name "(name)"
+$ find / -name ".bashrc"
+
+vi .bashrc
+(alias 기입 후 :wq!)
+
+source .bashrc
+
+# references
+- refer1
+https://altongmon.tistory.com/916

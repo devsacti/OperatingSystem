@@ -1,0 +1,58 @@
+# centos7 iso
+## why centos ? stable! : centos of redhat vs ubuntu of debian -refer1
+
+debian was started by online community, so it preoccupied the market. but there is not explicit subject who develop it, so less stable than centos
+
+centos is uncomercial and no warranty version of RHEL, which means that it was developed and tested for stability by specialist in recent years
+
+## download centos7 and virtualbox -refer2
+https://www.centos.org/download/
+
+https://www.virtualbox.org/wiki/Downloads
+
+## activate centos at the virtual machine of virtualbox
+새로만든 후 후속 설정은 우선 모두 default로 진행
+
+만든 가상머신 우클릭 후, 저장소에서 '비어 있음'의 IDE를 centos iso로 덮어쓰기
+
+가상머신 실행 후, centos install 진행(우선 모두 default)
+
+## config the network of centos on virtualmachine
+
+### port forwarding - refer3
+(NAT 네트워크 방식)
+Host인 pc <==> virtualbox(일종의 라우터) <==> Guest인 centos7 on virtubalmachine,
+
+이런 형태와 관련하여, virtualbox 설치 시
+내 pc 에서 ipconfig찍어보면 'VirtualBox Host-Only Ethernet Adapter'라는 명목으로 ip_192.168.56.1_가 할당됨
+
+그리고 이 ip로 1차 접근 후, Guest ip_10.0.2.15_로 접근하기 위해선 virtualbox ip와 guest ip 맵핑이 필요, 이것이 포트포워딩
+
+세부 설정은 refer3 참조
+
+Hint.
+## 네트워크 활성화
+vi /etc/sysconfig/network-scripts/ifcfg-enp0s3 => ONBOOT=yes
+systemctl restart network
+## 네트워크 활성화 확인
+nmclid d
+ip addr
+
+한편, pc에서 바로 guest로 연결할수 있게 (호스트 전용 네트워크) 방식 존재 세부 설정은 refer2 참조
+
+## Access the Guest by powershell of window(or putty)
+
+ssh -l root 192.168.56.1
+or
+ssh -l devsacti 192.168.56.1
+
+
+# reference
+- refer1
+https://compiler.tistory.com/18
+
+- refer2 download centos7 iso and config the network
+https://gptjs409.github.io/infra/2019/10/14/centos-install-cli.html
+
+- refer3
+https://m.blog.naver.com/yexx/221996230014

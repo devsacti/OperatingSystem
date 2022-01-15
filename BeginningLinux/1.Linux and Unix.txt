@@ -1,0 +1,9 @@
+# Linux and Unix
+Linux is son of Unix, so Linux is perfectly compatible with Unix
+
+FREE open source os which can be developed by everyone, especially related community
+
+at the inspect of security, it is better than pc
+
+it support network skill
+
