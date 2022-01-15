@@ -7,7 +7,7 @@ In this context, Server = (Linux + HW), SW(OS) of Sever that controls the HW of 
 
 Linux is representative example of Operating System with Unix that canbe father of commercial OS like Mac,Window
 
-# Operating System of Server
+## Operating System of Server
 (To ME) OS is base of Runtime that supports Applications like JAVA-APP to work.
 
 (ex) Linux like centos, ubuntu, AWS Linux etc that has JRE to init JAVA-APP
@@ -18,17 +18,21 @@ it is related with "terminal" of Server that canbe Interface of Server
 
 and network, security and everything 
 
-
-## Linux with Centos
+### Linux with Centos
 
 [Beginning Linux with Centos](https://github.com/devsacti/HandlingLinux)
 
-## Categories of Server : Cloud vs Physical
+## Categories of Server : Cloud Server VS Physical Server
+to be supplemented later
+
 [tmp reference1, summary not yet](https://www.liquidweb.com/kb/cloud-servers-vs-physical-servers-a-comparison/)
 
 [tmp reference2, summary not yet](https://library.gabia.com/contents/infrahosting/3864/)
 
-## AWS Linux
-(To ME) default dev OS
+### Running Cloud Server
+(To ME) renting and managing AWS Linux 2_default development environment
 
 [tmp repository, summary not yet](https://github.com/devsacti/Cloud-Utilizations)
+
+## HW
+to be continued...
