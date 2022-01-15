@@ -3,16 +3,14 @@
 
 Generally, personal computer = (SW + HW) = (Window OS + HW) or (Mac OS + HW)
 
-In this context, Server = (Linux + HW)
+In this context, Server = (Linux + HW), SW(OS) of Sever that controls the HW of Server
 
 Linux is representative example of Operating System with Unix that canbe father of commercial OS like Mac,Window
 
 # Operating System of Server
-(To ME) ultimately, OS is infra that supports Applications like JAVA-APP to work.
+(To ME) OS is base of Runtime that supports Applications like JAVA-APP to work.
 
-(easy) SW of Sever that controls the HW of Server
-
-(ex) Linux like centos, ubuntu, AWS Linux etc, Unix, ...
+(ex) Linux like centos, ubuntu, AWS Linux etc that has JRE to init JAVA-APP
 
 it is related with "terminal" of Server that canbe Interface of Server
 
@@ -25,7 +23,7 @@ and network, security and everything
 
 [Beginning Linux with Centos](https://github.com/devsacti/HandlingLinux)
 
-## Categories of Server : cloud vs Physical
+## Categories of Server : Cloud vs Physical
 [tmp reference1, summary not yet](https://www.liquidweb.com/kb/cloud-servers-vs-physical-servers-a-comparison/)
 
 [tmp reference2, summary not yet](https://library.gabia.com/contents/infrahosting/3864/)
