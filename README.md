@@ -23,11 +23,7 @@ and network, security and everything
 [Beginning Linux with Centos](https://github.com/devsacti/HandlingLinux)
 
 ## Categories of Server : Cloud Server VS Physical Server
-to be supplemented later
-
-[tmp reference1, summary not yet](https://www.liquidweb.com/kb/cloud-servers-vs-physical-servers-a-comparison/)
-
-[tmp reference2, summary not yet](https://library.gabia.com/contents/infrahosting/3864/)
+to be supplemented later..
 
 ### Running Cloud Server
 (To ME) renting and managing AWS Linux 2_default development environment
