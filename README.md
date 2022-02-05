@@ -27,7 +27,7 @@ it is related with almost everything. CPU, RAM, network, security, drivers for c
 #### Linux with Centos
 To utilize AWS Linux more effectively, Learning with local linux, Centos.
 
-[Beginning Linux with Centos](https://github.com/devsacti/HandlingLinux)
+[Beginning Linux with Centos](https://github.com/devsacti/Server/tree/main/BeginningLinux)
 
 ## HW of Server
 briefly, HW of Server is much more tough component than HW of PC.
