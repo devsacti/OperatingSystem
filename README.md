@@ -25,7 +25,7 @@ and Generally, AWS Linux EC2 is Iaas-oriented, but already are configured to hav
 
 it is related with almost everything. CPU, RAM, network, security, drivers for certain peripheral HW like mouse, printer, monitor,... 
 
-### Linux with Centos
+#### Linux with Centos
 To utilize AWS Linux more effectively, Learning with local linux, Centos.
 
 [Beginning Linux with Centos](https://github.com/devsacti/HandlingLinux)
