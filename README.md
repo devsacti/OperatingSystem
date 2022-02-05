@@ -14,8 +14,6 @@ let's start at this point!
 ## Operating System of Server
 (TO ME) OS is base layer of Middleware,Runtime that supports Web-App works
 
-[redhat : kinds of cloud](https://www.redhat.com/ko/topics/cloud-computing/iaas-vs-paas-vs-saas)
-
 Linux is a representative kind of Operating System. centos, ubuntu, AWS Linux are example of Linux.
 
 and Generally, AWS Linux EC2 is Iaas-oriented, but already are configured to have runtime like JRE to init JAVA-APP
@@ -50,11 +48,9 @@ but i think cloud server's value is counted relatively recently.
 in this time, i'd like to concentrate on Cloud.
 
 #### Running Cloud Server
-(TO ME) managing Amazon Web Services
-
 AWS provides cloud server like EC2, RDS and the related for web service
 
 AWS Linux2 is my default development environment as long as it is free...
 
-[Cloud-Utilizations](https://github.com/devsacti/Cloud-Utilizations)
+[Cloud Server and Extensions](https://github.com/devsacti/Cloud-Server-and-Extensions)
 
