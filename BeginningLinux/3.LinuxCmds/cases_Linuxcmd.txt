@@ -1,0 +1,7 @@
+# 계정 전환
+sudo -i 
+su [username]
+
+
+# hostname 변경
+https://coding8.tistory.com/35
