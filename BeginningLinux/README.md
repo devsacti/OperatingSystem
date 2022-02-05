@@ -1,6 +1,8 @@
 # BeginingLinux
 experiencing cmds, environemnts of linux
 
+!! it is still being organized, Linux is too big.. !!
+
 [1.Unix and Linux](./1.LinuxandUnix.txt)
 
 [2.centos7 of linux with virtualbox](./2.centos7oflinuxwithvirtualbox.txt)
