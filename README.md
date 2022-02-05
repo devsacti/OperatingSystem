@@ -7,10 +7,9 @@ Personal Computer = (Windows OS + HW) or (Mac OS + HW) or ...
 
 Server = (Linux OS + HW) or ...
 
-Server can be regarded as 'remote pc'
+Server can be regarded as 'remote public computer' that many persons use.
 
 let's start at this point!
-
 
 ## Operating System of Server
 (TO ME) OS is base layer of Middleware,Runtime that supports Web-App works
@@ -30,15 +29,31 @@ To utilize AWS Linux more effectively, Learning with local linux, Centos.
 
 [Beginning Linux with Centos](https://github.com/devsacti/HandlingLinux)
 
-## Categories of Server : Cloud Server VS Physical Server
-to be supplemented later..
+## HW of Server
+briefly, HW of Server is much more tough component than HW of PC.
+
+because it is like sum of thousands of desktops and notebooks.
+
+so, Cloud Server is coming to deal with and minimize problems.
+
+## Categories of Server based on how the Server is presented
+
+On-premise,representative of physical server, is like assembling a desktops that i will use.
+
+Cloud is renting desktop that i will use.
+
+both have their pros and cons.
+
+but i think cloud server's value is counted relatively recently.
+
+in this time, i'd like to concentrate on Cloud.
 
 #### Running Cloud Server
-(TO ME) renting and managing AWS Linux 2
+(TO ME) managing Amazon Web Services
+
+AWS provides cloud server like EC2, RDS and the related for web service
 
 AWS Linux2 is my default development environment as long as it is free...
 
 [Cloud-Utilizations](https://github.com/devsacti/Cloud-Utilizations)
 
-## HW
-to be continued...
