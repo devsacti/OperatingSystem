@@ -13,7 +13,8 @@ let's start at this point!
 
 ## Operating System of Server
 (TO ME) OS is base layer of Middleware,Runtime that supports Web-App works
- [redhat : kinds of cloud](https://www.redhat.com/ko/topics/cloud-computing/iaas-vs-paas-vs-saas)
+
+[redhat : kinds of cloud](https://www.redhat.com/ko/topics/cloud-computing/iaas-vs-paas-vs-saas)
 
 Linux is a representative kind of Operating System. centos, ubuntu, AWS Linux are example of Linux.
 
