@@ -22,6 +22,7 @@ and Generally, AWS Linux EC2 is Iaas-oriented, but already are configured to hav
 
 #### Linux
 (TO ME) son of Unix
+
  Unix is ancestor of Linux and it canbe father of commercial OS like Mac,Window
 
 it is related with almost everything. CPU, RAM, network, security, drivers for certain peripheral HW like mouse, printer, monitor,... 
@@ -41,6 +42,7 @@ So, I will go ahead after checking that the cloud server solves this part to som
 * on-premise
 * Cloud
 * hybrid
+
 (based on how the Server is presented)
 
 ####
